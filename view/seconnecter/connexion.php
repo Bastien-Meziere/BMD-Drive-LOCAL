@@ -6,8 +6,8 @@
 
 <?php 
 
-    echo "Je suis connect&eacute;(e) et je dispose des informations suivantes :";
-    var_dump($_SESSION['auteur']);
+    echo "Félicitation, vous êtes connecté !";
+    var_dump($_SESSION['clients']);
 
 ?>
 </div>

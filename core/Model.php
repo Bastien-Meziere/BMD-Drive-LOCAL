@@ -4,7 +4,7 @@ class Model{
     public $id;
     public static $pdo;
     public static function connexion(){
-        $bd="blague";
+        $bd="bmdrive";
         $login="root";
         $mdp="";
         $pdo=new PDO("mysql:host=localhost;dbname=".$bd,$login,$mdp);

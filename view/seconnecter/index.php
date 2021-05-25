@@ -29,6 +29,18 @@
             </div>
             </div>
           </form>
+          <form id="contactForm" name="sentMessage" method="POST" action="<?= WEBROOT.'seconnecter/inscription' ?>" >
+            <div class="row">
+              <div class="col-md-12 col-xs-12">
+                
+                <div class="clearfix"></div>
+              <div class="col-lg-12 col-xs-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Inscription</button>
+              </div>
+            </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

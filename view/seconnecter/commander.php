@@ -1,4 +1,4 @@
- <!-- Commander -->
+<!-- Commander -->
   <section class="page-section" id="commander">
     <div class="container">
       <div class="row">
@@ -8,17 +8,15 @@
 <?php 
 $count = 0;
 foreach($cmde['mescommandes'] as $ligne => $prop){
-	$aff = $prop->id_blague;
-	$aff2 = $prop ->px_blague;
+	$aff = $prop->id_prod;
+	$aff2 = $prop ->prix_prod;
 	$count  = $count + $aff2;
-	echo "Blague n° ${aff} - ${aff2}€";
+	echo "Produit n° ${aff} - ${aff2}€";
 	echo '<br>';
 }
 echo "<br>"; echo "Total : ${count}€"; echo "<br>";
-
 if(!isset($commande['resultat']))
 {
-
 ?>
 <br> <br> <br>
 <form id="CBform" name="CBformulaire" method="POST" >
@@ -26,8 +24,8 @@ if(!isset($commande['resultat']))
 		<div class="form-group col-md-2 col-xs-2"> </div>
 		
 		<div class="form-group col-md-8 col-xs-8">
-			<p>Numero de carte</p>
-		  <input class="form-control" type="text" placeholder="Numero de CB" required="required" data-validation-required-message="Veuillez entrez un numéro valide">
+			<p>Paiement par carte</p>
+		  <input class="form-control" type="text" placeholder="Numéro de CB" required="required" data-validation-required-message="Veuillez entrez un numéro valide">
 		</div>
 		
 		<div class="form-group col-md-2 col-xs-2"> </div>
@@ -52,7 +50,7 @@ if(!isset($commande['resultat']))
 	<div class="row">
 		<div class="form-group col-md-12 col-xs-12"> 
 			<a href="<?=WEBROOT."seconnecter/commanderfinaliser"?>">
-				<button type="button" style="margin:20px" >
+				<button class="btn btn-primary" type="button" style="margin:20px" >
 						PAYER 
 				</button>
 			</a>

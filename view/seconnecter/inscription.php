@@ -17,11 +17,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
                <!-- image -->
-                <div class="form-group col-md-12 col-xs-12">
-                <input type="hidden" name="MAX_FILE_SIZE" value="1024000">     
-				<input class="form-group col-md-12 col-xs-12" type="file" name="images" id="image" accept=".png, .jpg, .jpeg .PNG"> 
-                  <p class="help-block text-danger">Chargez une image de taille 100ko sous le format png, jpg, jpeg</p>
-                </div>
+                
                <!-- nom -->
                 <div class="form-group col-md-12 col-xs-12">
                   <input class="form-control" id="nom" name="nom" type="text" placeholder="Votre nom *" required="required" data-validation-required-message="svp entrez votre nom.">
@@ -49,19 +45,16 @@
                 </div>
                <!-- telephone -->
                 <div class="form-group col-md-12 col-xs-12">
-                  <input class="form-control" id="telephone" type="text" pattern="[0-9]{10}" title="Entrez les 10 chiffres de votre t&eacute;l&eacute;phone" name="telephone" placeholder="votre t&eacute;l&eacute;phone *" required="required" data-validation-required-message="svp entrez votre téléphone.">
+                  <input class="form-control" id="telephone" type="text" pattern="[0-9]{10}" title="Entrez les 10 chiffres de votre t&eacute;l&eacute;phone" name="telephone" placeholder="Votre t&eacute;l&eacute;phone *" required="required" data-validation-required-message="svp entrez votre téléphone.">
                   <p class="help-block text-danger" style="font-size:10px">Le t&eacute;l&eacute;phone est sous 10 chiffres</p>
                 </div>
                <!-- email -->
                 <div class="form-group col-md-12 col-xs-12">
-                  <input class="form-control" id="email" type="email" name="email" placeholder="votre email*" required="required" data-validation-required-message="svp entrez votre email.">
+                  <input class="form-control" id="email" type="email" name="email" placeholder="Votre email*" required="required" data-validation-required-message="svp entrez votre email.">
                   
                 </div>
                <!-- description -->
-                <div class="form-group col-md-12 col-xs-12">
-                  <textarea class="form-control" id="desc" name="description" placeholder="Votre description *" required="required" data-validation-required-message="d&eacute;crivez vous."></textarea>
-                  
-                </div>
+               
 </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">

@@ -11,8 +11,8 @@ class Panier extends Controller
             }
             $test.="0)";
         }
-        $tables = Model::load("blagues");
-        $tableRes['variable']=array("produit"=>$tables->find(Model::connexion(), array('condition'=>"id_blague in $test")));
+        $tables = Model::load("produit");
+        $tableRes['variable']=array("produit"=>$tables->find(Model::connexion(), array('condition'=>"id_prod in $test")));
         Model::deconnexion();
         $this-> set($tableRes);
         $this->render('index');
@@ -43,7 +43,7 @@ class Panier extends Controller
             if($_SESSION['test']==true){  
               //  echo "tesst";
                // var_dump($_SESSION['test']);
-               // echo "<script type='text/javascript'> window.alert('Vous avez déjà ce produit!!');</script>";
+               //echo "<script type='text/javascript'> window.alert('Vous avez déjà ce produit!!');</script>";
             }else{
                 $_SESSION['panier'][$i]=1;
             }
@@ -53,13 +53,13 @@ class Panier extends Controller
             if($_SESSION['test']!=false) echo "false";
             else echo $_SESSION['totalpanier'];
         }
-       // echo "<script type='text/javascript'>session(".$_SESSION['totalpanier'].");</script>";
+       //echo "<script type='text/javascript'>session(".$_SESSION['totalpanier'].");</script>";
         
     }
     
     function total(){
-        $tot=$_SESSION['totalpanier'];
-       echo $tot;
+        $total=$_SESSION['totalpanier'];
+       echo $total;
     }
    
      
@@ -74,4 +74,3 @@ class Panier extends Controller
     }
     
 }
-

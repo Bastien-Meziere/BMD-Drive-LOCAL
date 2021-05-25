@@ -7,19 +7,19 @@
         <?php if(isset($_SESSION['panier']) && $_SESSION['totalpanier']!=0)
         {?>
         <fieldset>
-    		<legend>Notre panier</legend>
+    		<h3>Votre panier</h3>
         <table id="panier" style="width:90%">
         
-        <tr><th>N&ordm;</th><th>Titre</th><th colspan="2">prix</th><th>Supprimer</th></tr>
+        <tr><th>N&ordm;</th><th>Produit</th><th colspan="2">Prix</th><th>Supprimer</th></tr>
         	<?php 
-        	$totalprix=0.0;
+        	$totalprix=0.00;
             foreach($variable['produit'] as $ligne)
             {
-                $totalprix+=$ligne->px_blague;
+                $totalprix+=$ligne->prix_prod;
             ?>
-        <tr id="lignepanier<?= $ligne->id_blague?>"><td><?= $ligne->id_blague?></td><td><?= $ligne->titre_blague?></td><td class="prix text-right" style="border-left:none"><?= $px=($ligne->px_blague!=null)?$ligne->px_blague:0 ?></td><td class="text-left" > &euro;</td>
+        <tr id="lignepanier<?= $ligne->id_prod?>"><td><?= $ligne->id_prod?></td><td><?= $ligne->lib_prod?></td><td class="prix text-right" style="border-left:none"><?= $prix=($ligne->prix_prod!=null)?$ligne->prix_prod:0 ?></td><td class="text-left" > &euro;</td>
         	<td>
-        		<button type="button" style="margin:10px" onclick="effacerpanier('lignepanier<?= $ligne->id_blague?>','<?= WEBROOT."panier/supprimerdupanier/".$ligne->id_blague ?>', '<?= WEBROOT."panier/total" ?>')">
+        		<button class="btn btn-primary" type="button" style="margin:10px" onclick="effacerpanier('lignepanier<?= $ligne->id_prod?>','<?= WEBROOT."panier/supprimerdupanier/".$ligne->id_prod ?>', '<?= WEBROOT."panier/total" ?>')">
           			[ - ]
         		</button>
         	</td>
@@ -33,7 +33,7 @@
         </div>
         
          <div class="col-xs-12 col-md-12 col-lg-12 text-left">
-         <?php if(isset($_SESSION['auteur']) && isset($_SESSION['totalpanier'])){
+         <?php if(isset($_SESSION['clients']) && isset($_SESSION['totalpanier'])){
             if($_SESSION['totalpanier'] !=0){         
        		echo "<a href='".WEBROOT."seconnecter/commander'>";
             }
@@ -41,14 +41,14 @@
              echo "<a href='".WEBROOT."seconnecter' >";
             }            
             ?>
-            <button type="button" style="margin:20px" >
+            <button class=" btn btn-primary" type="button" style="margin:20px" >
           			COMMANDER 
         	</button>
         	</a>
        	</div>
         <?php 
         }else{
-            echo "Le panier est vide";
+            echo '<h2>Le panier est vide</h2>';
         }
         
         
