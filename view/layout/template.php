@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="<?= IMAGE ?>css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="<?= IMAGE ?>css/animate.css">
+    <link rel="icon" type="image/ico" href="<?= IMAGE ?>images/logoppe2.png">
     
     <link rel="stylesheet" href="<?= IMAGE ?>css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?= IMAGE ?>css/owl.theme.default.min.css">
