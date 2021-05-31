@@ -17,7 +17,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="mdp" name="mdp" type="text" placeholder="Votre mot de passe *" required="required" data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="mdp" name="mdp" type="password" placeholder="Votre mot de passe *" required="required" data-validation-required-message="Please enter your name.">
                   <p class="help-block text-danger"></p>
                 </div>
                 
