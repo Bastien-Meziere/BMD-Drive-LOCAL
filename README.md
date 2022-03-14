@@ -15,3 +15,19 @@ Le site a été codé avec les langages suivants :
 * HTML
 * CSS
 * PHP
+
+## Exemple de page du site web :
+
+Produits :
+
+<img width="400px" src="https://github.com/Bastien-Meziere/FastQuiz/blob/master/produit.PNG?raw=true" />
+
+Ici vous retrouvez l'affichage des produits qui sont stockés dans une base de donnée sur phpMyAdmin :
+
+<img width="400px" src="https://github.com/Bastien-Meziere/FastQuiz/blob/master/bdd.PNG?raw=true" />
+
+Récapitulatif de commande :
+
+<img width="400px" src="https://github.com/Bastien-Meziere/FastQuiz/blob/master/recapitulatif.PNG?raw=true" />
+
+Ici vous retrouvez un récapitulatif de votre panier afin de pouvoir finaliser la commande si vous le souhaitez par la suite.
